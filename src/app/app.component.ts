@@ -9,7 +9,7 @@ import { FormControl, FormGroup } from "@angular/forms";
         Enable
       </button>
 
-      <textarea nz-input [disabled]="!enable.value"></textarea>
+      <textarea nz-input [disabled]="!enable.value" formControlName="text"></textarea>
     </form>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
